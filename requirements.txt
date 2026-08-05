@@ -21,3 +21,4 @@ Werkzeug==3.0.1
 
 # Optional: For production deployment
 # gunicorn==21.2.0
+#pip freeze > requirements.txt
