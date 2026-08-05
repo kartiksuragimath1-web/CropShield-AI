@@ -1,0 +1,201 @@
+village_id,village_name,latitude,longitude,crop_type,detected_disease,temperature,humidity,rainfall,wind_speed,previous_outbreak_count,distance_from_infected_village,spread_risk_level
+V001,Indore 1,29.8971,70.2506,Cotton,Late Blight,21.4,63.2,35.8,7.5,2,39.9,High
+V002,Jabalpur 2,24.7218,74.8871,Cotton,Leaf Spot,30.2,59.3,33.0,5.5,1,47.0,Medium
+V003,Sidhi 3,29.6511,81.6262,Corn,Bacterial Spot,24.1,67.1,12.7,4.8,1,28.0,Medium
+V004,Devgarh 4,23.4688,80.4694,Tomato,Leaf Spot,30.4,88.8,8.1,14.8,4,23.1,High
+V005,Tikamgarh 5,21.3842,81.207,Potato,Leaf Spot,24.9,71.9,47.2,17.8,0,23.7,Medium
+V006,Panna 6,27.3709,70.9613,Tomato,Powdery Mildew,21.9,43.6,18.4,15.2,3,42.3,Medium
+V007,Panna 7,26.2813,71.3779,Soybean,Downy Mildew,30.8,67.0,27.8,4.9,0,35.3,Low
+V008,Sehore 8,27.0824,74.6308,Rice,Late Blight,31.9,50.8,28.5,15.1,3,8.7,High
+V009,Khandwa 9,28.0852,81.5132,Tomato,Powdery Mildew,34.4,88.3,28.2,4.9,2,33.6,Medium
+V010,Anuppur 10,28.2365,81.9402,Cotton,Bacterial Spot,30.2,73.2,5.9,15.1,5,15.8,Medium
+V011,Balaghat 1,22.0666,82.1988,Cotton,Late Blight,33.8,52.1,0.6,14.8,3,33.3,Medium
+V012,Khandwa 2,29.172,78.0078,Potato,Early Blight,27.4,56.7,18.0,6.3,2,40.1,Medium
+V013,Damoh 3,27.1639,79.3096,Rice,Late Blight,18.5,77.1,2.6,18.4,3,30.0,Medium
+V014,Gwalior 4,27.6932,82.5938,Corn,Late Blight,30.1,84.6,22.4,17.6,2,48.4,Medium
+V015,Chhindwara 5,27.3193,77.7712,Soybean,Downy Mildew,29.6,85.4,39.1,2.9,5,5.1,High
+V016,Jhansi 6,21.2457,84.7386,Cotton,Powdery Mildew,26.7,81.1,3.3,5.1,0,47.6,Medium
+V017,Chhindwara 7,22.6997,79.7995,Rice,Late Blight,25.6,62.2,18.3,16.5,5,42.4,Medium
+V018,Anuppur 8,25.3407,80.0594,Corn,Bacterial Spot,20.0,53.0,20.4,6.2,3,44.9,High
+V019,Anuppur 9,28.8973,80.2357,Cotton,Common Rust,32.2,87.0,7.8,3.1,3,38.0,Medium
+V020,Sehore 10,22.5016,77.1448,Rice,Bacterial Spot,18.7,82.5,16.1,3.3,5,35.6,Medium
+V021,Chhatarpur 1,22.2254,70.5572,Wheat,Powdery Mildew,21.4,59.3,31.5,8.5,5,49.0,High
+V022,Bhopal 2,25.9477,79.4314,Corn,Early Blight,32.9,44.7,39.4,17.7,0,12.8,Low
+V023,Hoshangabad 3,26.8072,79.5881,Cotton,Late Blight,24.8,74.6,24.2,9.0,4,41.5,High
+V024,Satna 4,28.9303,75.7441,Soybean,Powdery Mildew,21.9,40.4,45.3,6.6,0,30.8,Medium
+V025,Sagar 5,28.7354,71.2934,Cotton,Leaf Spot,22.6,65.7,6.4,5.5,5,0.9,High
+V026,Sagar 6,25.6745,81.4993,Wheat,Common Rust,27.0,42.0,9.0,11.0,1,27.1,Medium
+V027,Indore 7,20.5326,77.3464,Tomato,Anthracnose,18.7,58.5,20.0,5.8,1,35.7,Medium
+V028,Dindori 8,25.4831,82.4,Rice,Powdery Mildew,22.9,55.9,22.7,11.3,4,48.2,High
+V029,Indore 9,24.6198,71.3074,Cotton,Anthracnose,20.5,61.9,45.3,4.1,3,5.8,High
+V030,Panna 10,21.0706,76.9971,Potato,Anthracnose,31.2,58.5,10.8,11.3,4,43.2,Medium
+V031,Sehore 1,23.2673,80.3254,Rice,Leaf Spot,18.7,52.4,40.9,3.7,5,31.5,Medium
+V032,Indore 2,29.2967,76.6379,Rice,Bacterial Spot,19.0,65.8,31.6,8.8,3,33.5,High
+V033,Anuppur 3,20.6869,77.7649,Rice,Anthracnose,31.2,68.8,29.7,7.2,2,1.3,High
+V034,Sehore 4,20.2504,81.3721,Corn,Common Rust,20.1,72.2,32.1,18.5,4,20.8,High
+V035,Hoshangabad 5,28.275,79.8499,Cotton,Common Rust,34.6,43.5,12.3,13.0,2,43.0,Medium
+V036,Bhopal 6,20.4989,84.6743,Rice,Common Rust,34.4,52.3,8.3,7.6,3,18.0,Medium
+V037,Tikamgarh 7,21.1811,71.7691,Rice,Late Blight,31.4,56.8,24.1,19.0,3,4.2,High
+V038,Jhansi 8,26.8001,72.5238,Cotton,Common Rust,24.5,61.6,6.7,19.8,4,47.5,Medium
+V039,Gwalior 9,23.8473,73.5736,Soybean,Anthracnose,22.6,61.8,0.4,14.4,5,36.6,High
+V040,Gwalior 10,23.9788,77.1179,Tomato,Leaf Spot,29.4,53.1,3.8,18.7,5,18.7,Medium
+V041,Rewa 1,20.361,82.8623,Soybean,Late Blight,32.0,73.5,19.4,8.5,1,39.7,Medium
+V042,Bhopal 2,24.7063,84.6485,Soybean,Anthracnose,20.2,74.2,48.1,6.6,4,9.4,High
+V043,Jabalpur 3,29.4491,84.1223,Rice,Early Blight,22.1,43.9,21.4,10.4,3,34.5,High
+V044,Vidisha 4,22.8862,84.8354,Soybean,Bacterial Spot,33.1,87.4,27.7,18.0,1,34.2,Medium
+V045,Satna 5,20.9094,74.7415,Cotton,Leaf Spot,19.4,54.1,3.3,7.9,5,49.5,Medium
+V046,Indore 6,20.6303,70.1831,Soybean,Anthracnose,26.6,65.8,37.7,11.4,0,20.2,Medium
+V047,Sehore 7,28.4107,80.6351,Rice,Leaf Spot,34.8,62.2,33.0,19.7,1,16.1,Medium
+V048,Sagar 8,25.8034,78.7471,Wheat,Downy Mildew,27.4,64.0,17.2,3.4,3,26.5,Medium
+V049,Sagar 9,20.8964,79.2408,Rice,Common Rust,31.1,53.8,15.1,14.3,3,18.7,High
+V050,Bhopal 10,23.5113,77.0568,Rice,Common Rust,27.1,71.5,5.1,2.4,3,46.7,Medium
+V051,Betul 1,20.2453,78.6389,Tomato,Powdery Mildew,25.8,73.4,6.0,13.8,2,24.4,High
+V052,Rampur 2,26.7283,73.7435,Soybean,Leaf Spot,33.5,49.1,38.4,8.9,5,40.2,High
+V053,Rampur 3,26.1671,84.2285,Rice,Early Blight,18.6,55.9,29.2,6.3,0,1.4,High
+V054,Raisen 4,29.5031,73.7254,Cotton,Early Blight,18.8,85.0,44.9,17.8,5,12.4,High
+V055,Bilaspur 5,24.5153,73.7771,Tomato,Downy Mildew,32.5,68.9,42.7,3.2,1,36.8,Medium
+V056,Ujjain 6,20.6938,75.6099,Corn,Early Blight,32.0,63.1,48.1,10.1,0,7.6,High
+V057,Raisen 7,27.2719,82.9263,Potato,Bacterial Spot,25.1,50.2,43.8,11.1,1,39.6,Medium
+V058,Damoh 8,24.1645,70.239,Potato,Early Blight,33.2,88.3,44.2,9.4,3,22.8,High
+V059,Anuppur 9,27.3022,70.0315,Soybean,Downy Mildew,34.0,76.2,35.3,6.5,2,38.8,High
+V060,Ujjain 10,25.5841,81.4842,Tomato,Late Blight,18.5,82.7,46.7,14.4,1,46.5,High
+V061,Gwalior 1,29.0762,73.8842,Cotton,Anthracnose,21.3,80.1,1.6,4.6,0,32.8,Low
+V062,Balaghat 2,26.4068,70.8333,Corn,Anthracnose,29.7,84.4,2.8,2.2,3,27.2,Medium
+V063,Sagar 3,27.2533,75.4843,Corn,Downy Mildew,33.2,57.6,21.3,8.8,2,31.6,Medium
+V064,Sagar 4,22.8045,76.5813,Soybean,Powdery Mildew,29.0,72.1,45.2,5.8,1,21.8,High
+V065,Bhopal 5,29.9522,82.5602,Wheat,Downy Mildew,29.9,50.4,37.7,15.8,4,21.5,Medium
+V066,Hoshangabad 6,29.8101,81.2502,Soybean,Late Blight,34.9,66.6,42.9,8.2,3,37.1,High
+V067,Jhansi 7,24.1415,81.7736,Wheat,Powdery Mildew,23.7,45.1,24.7,10.2,2,24.0,High
+V068,Rampur 8,27.7034,79.117,Rice,Leaf Spot,21.6,77.4,22.4,9.3,1,27.1,High
+V069,Chhindwara 9,28.0509,71.1695,Soybean,Common Rust,19.3,78.0,45.6,2.1,3,45.6,High
+V070,Betul 10,28.846,71.3542,Potato,Anthracnose,26.9,77.8,11.4,13.7,0,24.2,Medium
+V071,Chhatarpur 1,21.7669,83.0241,Corn,Anthracnose,28.4,48.9,6.0,17.1,0,45.2,Low
+V072,Hoshangabad 2,21.0875,78.1849,Wheat,Common Rust,25.0,54.7,12.2,4.8,0,40.2,Low
+V073,Shahdol 3,29.7099,76.669,Soybean,Anthracnose,24.7,54.2,13.6,15.9,0,15.7,Low
+V074,Hoshangabad 4,22.4703,79.0921,Potato,Early Blight,31.2,47.9,28.4,8.6,5,5.6,High
+V075,Khandwa 5,22.9312,71.267,Cotton,Powdery Mildew,33.6,74.7,22.7,3.6,0,44.1,Medium
+V076,Vidisha 6,20.3561,71.3069,Corn,Leaf Spot,20.6,60.7,19.4,17.8,2,5.9,High
+V077,Jabalpur 7,27.4763,71.3487,Tomato,Downy Mildew,29.0,67.1,30.4,19.2,1,37.7,Medium
+V078,Indore 8,21.0669,82.3377,Corn,Late Blight,18.8,40.8,25.0,5.8,3,9.6,High
+V079,Bilaspur 9,26.9032,83.0289,Tomato,Powdery Mildew,21.8,53.2,31.4,9.9,3,35.8,High
+V080,Indore 10,24.6081,75.5405,Potato,Common Rust,33.7,54.1,36.0,11.7,4,39.2,High
+V081,Ujjain 1,29.1081,80.8273,Tomato,Powdery Mildew,25.9,79.5,40.2,18.7,2,7.8,High
+V082,Chhatarpur 2,26.0158,83.4281,Cotton,Common Rust,22.2,79.7,38.2,17.3,3,19.6,High
+V083,Anuppur 3,24.0056,70.6762,Tomato,Leaf Spot,34.3,58.1,3.9,16.0,2,4.4,Medium
+V084,Rampur 4,27.86,70.4554,Wheat,Late Blight,34.1,89.1,0.0,12.5,3,31.3,High
+V085,Sidhi 5,29.5255,84.7922,Rice,Bacterial Spot,20.5,44.4,21.1,6.5,1,22.1,Medium
+V086,Damoh 6,24.8247,83.4616,Potato,Powdery Mildew,33.9,82.6,7.9,5.6,3,40.8,High
+V087,Raisen 7,21.5385,78.1032,Soybean,Late Blight,30.2,45.9,38.1,15.5,3,10.3,Medium
+V088,Khandwa 8,27.8297,75.3449,Corn,Anthracnose,27.7,73.4,46.7,14.7,4,19.9,High
+V089,Chhatarpur 9,20.5619,82.1542,Cotton,Late Blight,22.2,89.6,42.2,14.3,0,34.3,High
+V090,Devgarh 10,21.4916,80.3205,Potato,Leaf Spot,23.8,44.4,3.4,7.4,2,39.7,Medium
+V091,Panna 1,29.1632,82.1026,Wheat,Leaf Spot,25.2,52.4,2.9,4.1,1,2.7,Medium
+V092,Chhindwara 2,26.9978,83.3117,Cotton,Bacterial Spot,29.2,87.5,34.2,18.7,4,15.7,High
+V093,Shahdol 3,24.9184,74.4726,Cotton,Bacterial Spot,28.0,73.0,36.6,5.2,3,6.3,High
+V094,Raisen 4,27.7892,74.7177,Corn,Common Rust,27.3,45.6,29.6,11.0,4,10.2,High
+V095,Jhansi 5,21.4964,71.4582,Soybean,Powdery Mildew,31.3,78.8,47.0,18.0,1,33.7,Medium
+V096,Hoshangabad 6,21.6151,74.309,Rice,Powdery Mildew,28.1,82.9,0.2,7.2,2,21.0,High
+V097,Bilaspur 7,27.4697,72.2613,Potato,Early Blight,19.9,89.0,0.7,3.7,2,2.1,High
+V098,Dindori 8,24.0816,75.0363,Corn,Downy Mildew,29.7,65.0,42.9,11.2,1,31.4,High
+V099,Vidisha 9,23.7167,82.6312,Soybean,Early Blight,33.4,45.0,29.0,2.3,3,3.8,High
+V100,Chhatarpur 10,26.8525,72.709,Rice,Powdery Mildew,28.5,73.2,10.5,5.7,1,32.8,High
+V101,Sidhi 1,22.5927,79.6803,Corn,Common Rust,23.3,62.9,38.3,15.0,4,13.9,High
+V102,Rampur 2,27.2438,83.9142,Wheat,Downy Mildew,22.3,68.1,41.9,16.0,5,47.6,High
+V103,Hoshangabad 3,26.946,73.2516,Corn,Leaf Spot,29.4,67.5,14.8,18.6,2,11.2,Medium
+V104,Vidisha 4,26.1032,72.7403,Corn,Anthracnose,20.8,64.8,30.2,8.9,4,47.9,High
+V105,Vidisha 5,28.1316,74.8251,Cotton,Common Rust,19.9,73.6,18.3,10.3,5,22.3,High
+V106,Rampur 6,23.7741,78.9266,Rice,Powdery Mildew,23.7,52.1,12.4,12.6,2,31.3,Medium
+V107,Sagar 7,23.0686,70.3049,Soybean,Powdery Mildew,26.2,89.1,17.4,18.2,4,4.0,High
+V108,Devgarh 8,23.0913,72.1517,Potato,Leaf Spot,29.6,87.6,33.7,9.6,1,13.9,High
+V109,Ratlam 9,26.9558,70.6299,Rice,Common Rust,21.0,58.4,45.3,4.9,0,35.6,Low
+V110,Sidhi 10,27.7938,82.7975,Soybean,Anthracnose,25.8,55.1,3.0,13.4,1,41.9,Medium
+V111,Sehore 1,27.9132,71.6605,Wheat,Bacterial Spot,29.2,46.0,34.4,13.0,3,25.6,High
+V112,Rampur 2,29.1957,79.7203,Rice,Early Blight,31.5,64.0,38.7,5.5,4,4.2,High
+V113,Shahdol 3,21.1234,80.525,Potato,Common Rust,33.3,89.5,43.2,2.4,4,5.7,High
+V114,Shahdol 4,20.4278,77.7827,Wheat,Downy Mildew,18.2,79.7,45.4,12.9,4,14.9,High
+V115,Tikamgarh 5,28.4678,78.2269,Rice,Powdery Mildew,33.2,79.2,38.0,18.2,3,24.1,High
+V116,Mandla 6,22.1689,72.9731,Cotton,Early Blight,22.3,51.3,25.7,11.6,2,35.7,High
+V117,Jabalpur 7,27.2053,84.8991,Cotton,Bacterial Spot,18.3,54.1,22.7,8.3,5,4.4,High
+V118,Sidhi 8,21.9626,81.3025,Tomato,Late Blight,19.5,78.5,7.0,3.4,4,25.8,Medium
+V119,Vidisha 9,24.6786,75.3558,Potato,Leaf Spot,32.4,73.5,24.9,2.0,3,13.1,High
+V120,Indore 10,25.5389,72.565,Tomato,Late Blight,29.9,57.8,33.0,2.7,1,13.3,Medium
+V121,Jabalpur 1,27.5679,76.9919,Soybean,Leaf Spot,23.7,82.3,5.5,4.4,4,10.1,High
+V122,Raisen 2,20.3781,81.7604,Tomato,Common Rust,28.2,77.5,45.2,12.8,2,8.6,High
+V123,Sagar 3,20.0769,73.5767,Potato,Late Blight,29.8,77.8,25.8,4.9,1,32.0,Medium
+V124,Sidhi 4,20.779,84.2752,Potato,Early Blight,33.1,58.4,31.8,17.2,1,8.3,Medium
+V125,Vidisha 5,24.2793,82.5045,Wheat,Downy Mildew,29.1,69.2,27.2,2.6,5,41.3,High
+V126,Ujjain 6,21.6982,79.718,Rice,Anthracnose,21.4,64.0,30.3,2.5,5,48.3,High
+V127,Mandla 7,29.5819,83.4047,Soybean,Bacterial Spot,29.6,51.5,2.8,11.6,4,28.5,Medium
+V128,Rewa 8,21.9546,72.7442,Tomato,Late Blight,28.2,57.7,11.7,6.9,3,7.7,High
+V129,Chhindwara 9,28.7077,72.3646,Rice,Downy Mildew,21.5,59.8,9.7,14.3,2,27.7,Medium
+V130,Damoh 10,25.1558,72.3667,Tomato,Bacterial Spot,22.1,50.5,42.8,6.6,5,19.1,High
+V131,Chhindwara 1,24.8888,79.7609,Cotton,Early Blight,23.3,75.0,7.9,2.5,3,10.8,High
+V132,Sidhi 2,27.976,79.3656,Potato,Bacterial Spot,30.2,75.6,22.0,3.6,3,14.5,High
+V133,Tikamgarh 3,29.4521,80.74,Cotton,Powdery Mildew,30.8,55.0,13.5,2.9,0,19.6,Low
+V134,Khandwa 4,26.2954,73.2079,Tomato,Late Blight,33.7,62.8,26.3,19.6,2,45.0,Medium
+V135,Raisen 5,20.4752,75.3744,Cotton,Powdery Mildew,30.0,63.3,21.2,17.6,5,23.7,High
+V136,Sehore 6,29.0145,80.8192,Potato,Common Rust,22.8,49.7,13.2,15.1,2,18.1,Medium
+V137,Dindori 7,21.6134,78.6557,Corn,Powdery Mildew,34.5,89.0,13.0,9.5,5,15.0,High
+V138,Bilaspur 8,22.6843,70.0953,Soybean,Early Blight,27.8,81.5,38.5,18.8,5,45.8,High
+V139,Gwalior 9,21.1559,78.7237,Wheat,Downy Mildew,34.7,45.0,36.0,15.2,5,16.8,Medium
+V140,Bilaspur 10,29.1154,78.9386,Wheat,Early Blight,30.4,61.2,17.9,2.9,1,27.8,Low
+V141,Vidisha 1,21.7677,80.5259,Tomato,Leaf Spot,21.8,53.1,42.9,4.4,4,19.9,High
+V142,Devgarh 2,26.5501,80.4951,Tomato,Early Blight,18.3,87.8,31.8,13.9,2,41.3,High
+V143,Jabalpur 3,20.188,83.0233,Rice,Early Blight,24.2,61.4,2.4,13.2,4,37.8,High
+V144,Chhatarpur 4,21.9895,84.8107,Potato,Anthracnose,26.7,80.4,21.0,12.4,2,37.0,High
+V145,Bhopal 5,23.0833,81.4151,Cotton,Powdery Mildew,23.5,71.2,31.9,7.6,3,24.3,High
+V146,Vidisha 6,24.8533,83.5896,Potato,Leaf Spot,33.8,61.3,32.4,4.5,3,45.1,Medium
+V147,Damoh 7,22.2362,72.6216,Potato,Downy Mildew,18.1,85.4,4.7,3.7,5,9.9,High
+V148,Rewa 8,22.4834,70.3797,Tomato,Anthracnose,27.3,88.7,19.0,19.4,0,42.4,Medium
+V149,Damoh 9,25.9579,75.9556,Soybean,Common Rust,21.2,87.6,30.0,16.6,4,1.3,High
+V150,Ujjain 10,26.8514,79.5665,Tomato,Leaf Spot,25.9,89.5,1.3,5.8,4,18.6,High
+V151,Bhopal 1,21.6103,70.4448,Soybean,Leaf Spot,22.9,73.1,15.8,10.3,4,6.7,High
+V152,Khandwa 2,20.8779,70.4003,Potato,Downy Mildew,19.4,41.0,19.3,15.6,3,3.3,High
+V153,Mandla 3,23.2428,82.1303,Tomato,Common Rust,18.3,52.8,6.7,10.2,2,11.7,Medium
+V154,Mandla 4,28.6693,75.6713,Tomato,Powdery Mildew,30.3,64.2,11.9,12.8,1,14.4,Medium
+V155,Indore 5,20.6552,73.9012,Potato,Downy Mildew,31.2,54.8,49.7,16.3,2,24.0,Medium
+V156,Ratlam 6,23.2199,71.1033,Cotton,Bacterial Spot,34.9,48.3,20.7,6.9,3,39.2,High
+V157,Indore 7,23.5229,77.2132,Soybean,Powdery Mildew,20.9,60.0,9.1,19.3,0,9.5,Low
+V158,Ratlam 8,24.2618,73.1818,Potato,Bacterial Spot,24.3,56.9,2.3,5.0,0,4.4,Medium
+V159,Vidisha 9,28.9065,74.4408,Potato,Common Rust,18.9,63.9,31.1,4.6,2,35.2,Medium
+V160,Devgarh 10,20.4052,72.7879,Soybean,Early Blight,25.2,68.7,35.2,14.5,5,43.9,High
+V161,Anuppur 1,26.3348,71.682,Tomato,Early Blight,24.7,65.6,13.3,4.0,4,38.4,Medium
+V162,Devgarh 2,22.2278,78.5486,Potato,Powdery Mildew,27.8,51.5,28.2,4.8,4,4.9,High
+V163,Khandwa 3,29.2963,71.8288,Rice,Late Blight,21.9,79.8,16.5,17.8,4,16.6,High
+V164,Jhansi 4,28.2641,79.2337,Tomato,Late Blight,34.1,40.5,17.7,11.7,4,32.1,Medium
+V165,Damoh 5,23.9106,80.7714,Corn,Common Rust,19.8,49.1,7.6,6.5,0,8.0,Medium
+V166,Damoh 6,20.8703,75.2005,Cotton,Leaf Spot,23.6,52.2,41.5,14.4,2,35.4,High
+V167,Jabalpur 7,25.8499,81.1963,Soybean,Early Blight,30.4,75.8,33.9,18.1,4,20.6,High
+V168,Hoshangabad 8,26.8921,81.2024,Wheat,Common Rust,24.5,56.2,48.0,8.9,2,19.9,High
+V169,Sehore 9,23.7061,82.9372,Corn,Anthracnose,27.9,66.5,26.7,12.8,0,33.1,Medium
+V170,Anuppur 10,28.557,83.0397,Rice,Common Rust,19.6,74.8,15.7,17.4,2,21.6,Medium
+V171,Chhindwara 1,25.323,80.8739,Tomato,Common Rust,23.3,63.3,35.5,11.4,4,16.0,High
+V172,Vidisha 2,29.1188,75.5278,Tomato,Downy Mildew,19.6,83.6,25.5,9.7,4,26.7,High
+V173,Ratlam 3,20.9947,75.9919,Wheat,Powdery Mildew,34.9,78.6,19.0,12.3,4,24.4,High
+V174,Rampur 4,22.693,75.6391,Wheat,Early Blight,26.5,76.8,24.4,17.7,2,38.1,High
+V175,Rewa 5,21.3628,75.7038,Tomato,Common Rust,28.1,74.5,43.8,12.8,3,8.4,High
+V176,Jabalpur 6,26.7248,74.9117,Cotton,Anthracnose,19.9,46.8,27.9,10.4,1,35.6,Medium
+V177,Sehore 7,24.4561,77.3897,Wheat,Powdery Mildew,26.8,55.6,0.3,10.0,5,4.8,High
+V178,Hoshangabad 8,23.1199,75.9515,Potato,Common Rust,23.5,61.4,18.8,16.0,5,46.3,Medium
+V179,Satna 9,25.1386,83.4297,Wheat,Bacterial Spot,21.7,67.8,25.7,13.6,0,32.4,Medium
+V180,Shahdol 10,26.1421,80.5557,Potato,Leaf Spot,29.1,56.5,28.9,12.4,3,45.3,High
+V181,Jhansi 1,21.7781,75.3093,Potato,Early Blight,29.4,57.4,10.1,8.6,0,14.1,Medium
+V182,Hoshangabad 2,22.0737,83.2714,Rice,Common Rust,22.9,58.2,9.7,13.1,5,13.0,High
+V183,Bilaspur 3,21.5439,75.7404,Corn,Bacterial Spot,24.5,44.6,8.5,7.4,0,44.9,Low
+V184,Chhatarpur 4,20.3857,72.3802,Tomato,Anthracnose,24.4,54.8,33.3,16.9,1,47.1,Medium
+V185,Balaghat 5,22.5689,75.1714,Cotton,Anthracnose,23.6,66.6,36.9,18.8,0,20.2,Medium
+V186,Chhatarpur 6,25.9125,83.8711,Cotton,Common Rust,25.1,72.8,9.8,9.0,4,38.9,High
+V187,Balaghat 7,24.0972,75.53,Wheat,Leaf Spot,23.7,72.4,31.6,11.7,3,15.3,High
+V188,Bhopal 8,23.7605,73.4684,Cotton,Anthracnose,26.7,87.4,38.8,9.0,5,13.4,High
+V189,Vidisha 9,20.4835,83.7795,Tomato,Powdery Mildew,19.1,77.5,32.3,12.2,3,46.7,High
+V190,Sidhi 10,20.9108,81.0401,Soybean,Common Rust,23.2,89.9,45.3,4.7,3,38.4,High
+V191,Raisen 1,25.2704,82.3371,Soybean,Late Blight,27.1,48.4,30.9,7.9,2,1.1,High
+V192,Satna 2,28.6564,70.0912,Soybean,Downy Mildew,18.4,65.9,31.2,2.7,1,14.7,Medium
+V193,Hoshangabad 3,21.0123,71.2985,Potato,Early Blight,24.6,77.1,10.1,13.6,2,17.2,High
+V194,Tikamgarh 4,22.5592,75.0391,Rice,Powdery Mildew,26.6,70.8,15.9,10.1,4,11.8,High
+V195,Balaghat 5,27.1176,81.1375,Soybean,Early Blight,31.7,77.6,4.3,7.9,0,37.5,Medium
+V196,Ujjain 6,22.8449,77.7955,Corn,Common Rust,26.9,64.5,8.5,13.6,2,13.9,High
+V197,Chhatarpur 7,24.6272,79.3485,Wheat,Downy Mildew,22.5,40.5,28.5,7.3,0,2.4,High
+V198,Hoshangabad 8,21.3428,80.023,Soybean,Common Rust,22.4,70.9,1.7,11.1,3,27.8,High
+V199,Khandwa 9,26.2289,78.2874,Cotton,Common Rust,24.5,66.0,41.1,14.9,2,8.5,High
+V200,Damoh 10,24.5947,78.8404,Soybean,Common Rust,26.3,43.0,1.8,19.7,5,24.5,Medium

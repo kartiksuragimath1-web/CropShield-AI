@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risk Map Dashboard - CropShield AI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <style>
+        #map { height: 600px; width: 100%; }
+        .legend { background: white; padding: 10px; border-radius: 5px; }
+        .legend-item { margin: 5px 0; }
+        .legend-color { width: 20px; height: 20px; display: inline-block; margin-right: 5px; }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <i class="fas fa-shield-alt"></i> CropShield AI
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/upload">Upload Image</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predict-spread">Predict Spread</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/map-dashboard">Risk Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admin-dashboard">Admin</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid my-4">
+        <div class="row">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header bg-success text-white">
+                        <h3 class="mb-0">
+                            <i class="fas fa-map-marked-alt"></i> Disease Spread Risk Map
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <div class="legend">
+                                    <h6>Risk Level Legend</h6>
+                                    <div class="legend-item">
+                                        <span class="legend-color bg-success"></span> Low Risk
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-color bg-warning"></span> Medium Risk
+                                    </div>
+                                    <div class="legend-item">
+                                        <span class="legend-color bg-danger"></span> High Risk
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-end">
+                                <button class="btn btn-primary" onclick="refreshMap()">
+                                    <i class="fas fa-sync-alt"></i> Refresh Map
+                                </button>
+                            </div>
+                        </div>
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Village List -->
+        <div class="row mt-4">
+            <div class="col-12">
+                <div class="card shadow">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0">Village Risk Summary</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped" id="villageTable">
+                                <thead>
+                                    <tr>
+                                        <th>Village ID</th>
+                                        <th>Village Name</th>
+                                        <th>Risk Level</th>
+                                        <th>Crop Type</th>
+                                        <th>Last Detected Disease</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="villageTableBody">
+                                    <tr>
+                                        <td colspan="5" class="text-center">Loading...</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        let map;
+        let markers = [];
+
+        // Initialize map (centered on India)
+        function initMap() {
+            map = L.map('map').setView([23.0225, 77.2090], 5);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            loadVillageData();
+        }
+
+        function getRiskColor(riskLevel) {
+            switch(riskLevel) {
+                case 'High': return 'red';
+                case 'Medium': return 'orange';
+                case 'Low': return 'green';
+                default: return 'gray';
+            }
+        }
+
+        function getRiskIcon(riskLevel) {
+            const color = getRiskColor(riskLevel);
+            return L.divIcon({
+                className: 'custom-marker',
+                html: `<div style="background-color: ${color}; width: 20px; height: 20px; border-radius: 50%; border: 2px solid white;"></div>`,
+                iconSize: [20, 20]
+            });
+        }
+
+        async function loadVillageData() {
+            try {
+                const response = await fetch('/api/risk-map');
+                const data = await response.json();
+
+                if (data.success) {
+                    // Clear existing markers
+                    markers.forEach(marker => map.removeLayer(marker));
+                    markers = [];
+
+                    // Add markers for each village
+                    data.villages.forEach(village => {
+                        if (village.latitude && village.longitude) {
+                            const marker = L.marker(
+                                [village.latitude, village.longitude],
+                                { icon: getRiskIcon(village.risk_level) }
+                            ).addTo(map);
+
+                            marker.bindPopup(`
+                                <strong>${village.village_name}</strong><br>
+                                ID: ${village.village_id}<br>
+                                Risk: <span style="color: ${getRiskColor(village.risk_level)}">${village.risk_level}</span><br>
+                                Crop: ${village.crop_type || 'Unknown'}<br>
+                                Disease: ${village.last_detected_disease || 'None'}
+                            `);
+
+                            markers.push(marker);
+                        }
+                    });
+
+                    // Update table
+                    updateVillageTable(data.villages);
+                } else {
+                    throw new Error(data.error || 'Failed to load village data');
+                }
+            } catch (error) {
+                console.error('Error loading village data:', error);
+                document.getElementById('villageTableBody').innerHTML = 
+                    '<tr><td colspan="5" class="text-center text-danger">Error loading data</td></tr>';
+            }
+        }
+
+        function updateVillageTable(villages) {
+            const tbody = document.getElementById('villageTableBody');
+            tbody.innerHTML = '';
+
+            if (villages.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" class="text-center">No villages found</td></tr>';
+                return;
+            }
+
+            villages.forEach(village => {
+                const row = document.createElement('tr');
+                const riskClass = village.risk_level === 'High' ? 'danger' : 
+                                 village.risk_level === 'Medium' ? 'warning' : 'success';
+                
+                row.innerHTML = `
+                    <td>${village.village_id}</td>
+                    <td>${village.village_name}</td>
+                    <td><span class="badge bg-${riskClass}">${village.risk_level}</span></td>
+                    <td>${village.crop_type || 'Unknown'}</td>
+                    <td>${village.last_detected_disease || 'None'}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function refreshMap() {
+            loadVillageData();
+        }
+
+        // Initialize map on page load
+        window.addEventListener('DOMContentLoaded', initMap);
+    </script>
+</body>
+</html>

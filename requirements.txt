@@ -1,0 +1,23 @@
+# CropShield AI - Python Dependencies
+
+# Web Framework
+Flask==3.0.0
+flask-cors==4.0.0
+
+# Machine Learning
+tensorflow==2.15.0
+scikit-learn==1.3.2
+numpy==1.24.3
+pandas==2.1.4
+
+# Image Processing
+Pillow==10.1.0
+
+# Database
+# SQLite is included with Python, no extra package needed
+
+# Utilities
+Werkzeug==3.0.1
+
+# Optional: For production deployment
+# gunicorn==21.2.0
